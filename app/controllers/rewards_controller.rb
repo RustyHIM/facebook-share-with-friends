@@ -16,4 +16,11 @@ class RewardsController < ApplicationController
       format.html
     end
   end
+  
+  def message
+  end
+  
+  def microbrew
+  end
+  
 end

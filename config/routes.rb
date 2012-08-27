@@ -2,7 +2,7 @@ Facebook::Application.routes.draw do
   get "rewards/new"
 
   get "rewards/create"
-
+  get "rewards/message"
   get "rewards/index"
 
   get "rewards/destroy"

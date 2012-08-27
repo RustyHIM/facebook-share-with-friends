@@ -1,0 +1,22 @@
+
+<h1><%= link_to "<-- home", root_path %></h1>
+
+<div><html xmlns:fb="http://localhost:3000/">
+  <body>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <div id="fb-root"></div>
+    <script>
+      // assume we are already logged in
+      FB.init({appId: '260517390734833', xfbml: true, cookie: true});
+
+      FB.ui({
+          method: 'send',
+          name: 'Local Microbrew Lover - Lokalty Gift',
+          link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+description: 'can put anything in for the description',
+
+          });
+     </script>
+  </body>
+</html>
+</div>

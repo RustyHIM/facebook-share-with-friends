@@ -1,31 +1,20 @@
 <h1>Lokalty Digital Gifts</h1>
+
+<% if current_user %>
+
 <div id= "Local-Microbrew-Lover">
 <h2>1. Local Microbrew Lover </h2>
 <p><img src="http://aboutfoursquare.com/wp-content/uploads/2011/11/BelgianHolodayBadge.jpeg" align="left""> <big><big><i> For 200 points give a friend $20 to spend at any of our locally owned Philly Micropubs </i></big></big></p>
-</div>  
-<% if current_user %>
-   <div id="friends">
-     <p><%= link_to "Send Link to Facebook Friends", "#", :id => "invite_fb_friends" %></p>
+</div>
 
-     <div id="fb-root"></div>
 
-     <script src="http://connect.facebook.net/en_US/all.js"></script>
+     <div id="friends">
+	      
+<p><%= link_to "Give to FB Friends", "rewards/message"%>  </p>
+		
+	  <% end %>
 
-     <script>
-       $(function(){
-   
-         $("a#invite_fb_friends").click(function() {
-           FB.init({ 
-              appId:'260517390734833', 
-              cookie:false, 
-              status:true
-           });
-     
-           FB.ui({ method: 'apprequests', message: 'just bought you a badge from lokalty the link would go here...'});
-         });
-       });
-     </script>
-   </div>
- <% end %>
+  </div>
+
 
 

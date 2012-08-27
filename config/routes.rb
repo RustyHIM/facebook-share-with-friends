@@ -3,6 +3,7 @@ Facebook::Application.routes.draw do
 
   get "rewards/create"
   get "rewards/message"
+  get "rewards/microbrew"
   get "rewards/index"
 
   get "rewards/destroy"
